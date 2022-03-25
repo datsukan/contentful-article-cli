@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "dependencies": {
+    "contentful-management": "^8.2.2",
+    "dayjs": "^1.11.0",
+    "dotenv": "^16.0.0"
+  },
+  "scripts": {
+    "article-pull": "node ./scripts/pull.js",
+    "article-push": "node ./scripts/push.js",
+    "article-show": "node ./scripts/show.js",
+    "article-help": "node ./scripts/help.js"
+  }
+}

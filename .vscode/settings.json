@@ -1,0 +1,18 @@
+{
+  "editor.tabSize": 2,
+  "cSpell.userWords": ["datetime", "contentful"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true,
+    "editor.snippetSuggestions": "top"
+  },
+  "markdown.preview.breaks": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.quickSuggestions": { "strings": true },
+  "files.encoding": "utf8",
+  "files.eol": "\n"
+}
