@@ -108,7 +108,7 @@ async function extractArticleInfo(article, client) {
   }
 
   const id = article.sys.id
-  const title = getValueOfFields("title", "none")
+  const title = getValueOfFields("title", "none").replace(/\//g, "／")
   const slug = getValueOfFields("slug", "none")
   const fileName = `${saveDir}draft--${title}--${slug}--${id}.md`
   const body = getValueOfFields("body", "")
