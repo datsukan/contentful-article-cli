@@ -92,7 +92,7 @@ async function extractArticleInfo(article, client) {
     const id = article.sys.id
     const publishedAt = article.sys.publishedAt
     const formattedPublishedAt = dayjs(publishedAt).format("YYYY-MM-DD")
-    const title = article.fields.title[defaultLocaleCode]
+    const title = article.fields.title[defaultLocaleCode].replace(/\//g, "／")
     const slug = article.fields.slug[defaultLocaleCode]
     const fileName = `${saveDir}${formattedPublishedAt}--${title}--${slug}--${id}.md`
     const body = article.fields.body[defaultLocaleCode]
